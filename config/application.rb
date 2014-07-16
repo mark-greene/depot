@@ -30,7 +30,7 @@ module Depot
       domain: "gmail.com",
       authentication: "plain",
       user_name: "mbg.depot@gmail.com",
-      password: "Test-587",
+      password: ENV["PASSWORD"],
       enable_starttls_auto: true
     }
 
