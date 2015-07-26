@@ -1,0 +1,16 @@
+web:
+  build: .
+  links:
+    - db:postgres
+  environment:
+    POSTGRES_HOST: postgres
+  ports:
+    - "3000:3000"
+  volumes:
+    - .:/app
+
+db:
+  image: postgres
+  environment:
+    POSTGRES_USER: depot
+    POSTGRES_PASSWORD: depot
