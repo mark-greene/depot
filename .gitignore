@@ -15,3 +15,6 @@
 /log/*.log
 /tmp
 .env
+
+# Ignore local asset pipline cache files
+/public/assets
