@@ -25,7 +25,7 @@ module Depot
     config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      domain: "gmail.com",
+      domain: "heroku.com",
       authentication: "plain",
       user_name: ENV["DEPOT_EMAIL"],
       password: ENV["DEPOT_PASSWORD"],
