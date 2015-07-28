@@ -4,8 +4,11 @@ web:
     - db:postgres
   environment:
     POSTGRES_HOST: postgres
+    DEPOT_EMAIL:
+    DEPOT_PASSWORD:
   ports:
     - "3000:3000"
+    - "587:587"
   volumes:
     - .:/app
 
