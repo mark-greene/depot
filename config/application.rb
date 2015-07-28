@@ -21,11 +21,12 @@ module Depot
     # config.i18n.default_locale = :de
     I18n.enforce_available_locales = false
 
+    config.action_mailer.raise_delivery_errors = false
     config.action_mailer.delivery_method = :smtp
     config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      domain: "heroku.com",
+      domain: "gmail.com",
       authentication: "plain",
       user_name: ENV["DEPOT_EMAIL"],
       password: ENV["DEPOT_PASSWORD"],
