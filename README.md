@@ -2,10 +2,7 @@
 
 # README for Depot App
 
-Dockerized to run locally
-Deployed to Heroku
-
-Git clone this repository
+git clone this repository
 
 ### Local
 ```
